@@ -4,6 +4,7 @@ import React from "react"
 import behance from "../public/icon/Iconbehance.svg"
 import dribbbel from "../public/icon/Icondribbbel.svg"
 import instagram from "../public/icon/Iconinstagram.svg"
+import { Button } from "./ui/button"
 
 const social = [
     {
@@ -23,11 +24,13 @@ export default function CTA() {
             <p className='text-5xl mb-10'>
                 Tertarik untuk kerja sama dengan kami?
             </p>
-            <Link href='/contact'>
-                <button className='bg-blue-500 w-56 h-12 rounded-full text-white px-4 py-2  mt-2 uppercase'>
-                    Let's Talk
-                </button>
-            </Link>
+
+            <Button
+                variant='default'
+                className='rounded-full w-56 h-12'
+            >
+                LET &apos; S TALK
+            </Button>
             <div className='flex gap-2 mt-28'>
                 {social.map((card, index) => (
                     <div className='h-12 w-12 flex justify-center bg-white rounded-full'>
