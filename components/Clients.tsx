@@ -12,40 +12,46 @@ import roger from "../public/images/roger.png"
 import hoopAi from "../public/images/hoopsAi.png"
 
 const clientData = [
+    { id: 1, image: roger },
     {
-        image: roger,
-    },
-    {
+        id: 2,
         image: hoopAi,
     },
     {
+        id: 3,
         image: roger,
     },
     {
+        id: 4,
         image: hoopAi,
     },
     {
+        id: 5,
         image: roger,
     },
     {
+        id: 6,
         image: roger,
     },
     {
+        id: 7,
         image: roger,
     },
     {
+        id: 8,
         image: roger,
     },
     {
+        id: 9,
         image: roger,
     },
 ]
 
 export default function Clients() {
     return (
-        <div className='my-10'>
+        <div className='my-10 h-screen'>
             <div
-                className='flex flex-col py-8 justify-center items-center border
+                className='flex flex-col py-8 justify-center items-center
             '
             >
                 <h1 className='font-semibold py-3 text-5xl'>Client Kami</h1>
@@ -59,6 +65,7 @@ export default function Clients() {
                 <div className='  flex justify-center'>
                     {clientData.slice(0, 1).map((card, index) => (
                         <Image
+                            key={card.id}
                             src={card.image}
                             alt=''
                             height={110}
