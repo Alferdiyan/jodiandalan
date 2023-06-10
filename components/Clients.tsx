@@ -78,6 +78,7 @@ export default function Clients() {
                 <div className=' grid justify-center'>
                     {clientData.slice(1, 3).map((card, index) => (
                         <Image
+                            key={card.id}
                             src={card.image}
                             alt=''
                             height={110}
@@ -90,6 +91,7 @@ export default function Clients() {
                 <div className='  grid justify-center'>
                     {clientData.slice(3, 6).map((card, index) => (
                         <Image
+                            key={card.id}
                             src={card.image}
                             alt=''
                             height={110}
@@ -102,6 +104,7 @@ export default function Clients() {
                 <div className='  grid justify-center'>
                     {clientData.slice(6, 8).map((card, index) => (
                         <Image
+                            key={card.id}
                             src={card.image}
                             alt=''
                             height={110}
@@ -114,6 +117,7 @@ export default function Clients() {
                 <div className='col-span-1 grid justify-center'>
                     {clientData.slice(8, 9).map((card, index) => (
                         <Image
+                            key={card.id}
                             src={card.image}
                             alt=''
                             height={110}

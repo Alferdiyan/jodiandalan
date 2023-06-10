@@ -36,26 +36,26 @@ const cardData = [
 
 export default function Service() {
     return (
-        <div className='bg-gradient-to-b from-[#D4DDF8] to-white '>
-            <div className=' flex justify-center border border-rose-300'>
+        <div className=' h-screen px-28 selection: bg-gradient-to-b from-[#D4DDF8] to-white '>
+            <div className=' flex justify-center text-5xl font-semibold'>
                 <p>What We Do</p>
             </div>
-            <div className='grid grid-cols-3 gap-8 mt-10'>
+            <div className='grid grid-cols-3 gap-8 mt-24'>
                 {cardData.map((card, index) => (
                     <Card
                         key={index}
-                        className='border-4 border-[#D4DDF8] rounded-3xl p-10 w-[336px] h-[336px] '
+                        className='border-4 flex flex-col items-center justify-center border-[#D4DDF8] rounded-3xl p-10 w-[336px] h-[336px] '
                     >
                         <Image
                             src={card.image}
                             alt=''
                             height={77}
                         />
-                        <CardHeader className='flex justify-center border'>
+                        <CardHeader className='flex justify-center items-center gap-2'>
                             <CardTitle className='font-semibold'>
                                 {card.title}
                             </CardTitle>
-                            <CardDescription className='font-normal justify-center'>
+                            <CardDescription className='font-normal fex justify-items-center'>
                                 {card.description}
                             </CardDescription>
                         </CardHeader>
@@ -64,25 +64,4 @@ export default function Service() {
             </div>
         </div>
     )
-}
-{
-    /* <div>
-                <Card className='w-[336px] h-[336px] border-4 border-[#D4DDF8]  rounded-3xl p-10'>
-                    <Image
-                        src={visual}
-                        alt=''
-                        height={77}
-                    />
-                    <CardHeader className='flex justify-center border'>
-                        <CardTitle className='font-semibold'>
-                            Visual Branding
-                        </CardTitle>
-                        <CardDescription className='font-normal justify-center'>
-                            Logo Mark, Skema Warna, Tipografi, Branding
-                            Guidelines, Desain Materi Promosi & Marketing,
-                            Packaging.
-                        </CardDescription>
-                    </CardHeader>
-                </Card>
-            </div> */
 }

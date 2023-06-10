@@ -8,12 +8,15 @@ import { Button } from "./ui/button"
 
 const social = [
     {
+        id: 1,
         image: behance,
     },
     {
+        id: 2,
         image: dribbbel,
     },
     {
+        id: 3,
         image: instagram,
     },
 ]
@@ -35,6 +38,7 @@ export default function CTA() {
                 {social.map((card, index) => (
                     <div className='h-12 w-12 flex justify-center bg-white rounded-full'>
                         <Image
+                            key={card.id}
                             src={card.image}
                             alt=''
                             height={26}

@@ -20,13 +20,13 @@ export default function Hero() {
                     </p>
                     <p className='text-xs font-medium text-slate-500'>
                         Over the past 9 years, as an art director and designer,
-                        I’ve worked <br />
+                        I&apos;ve worked <br />
                         with big companies and up-and-coming startups to
                         successfully <br /> help them reach their full potential
                         and attract new customers.
                     </p>
                     <div className='flex gap-4 '>
-                        <p className='font-'>View Project</p>
+                        <p className=''>View Project</p>
                         <p className='text-xs font-medium text-slate-500 flex items-center'>
                             or
                         </p>
