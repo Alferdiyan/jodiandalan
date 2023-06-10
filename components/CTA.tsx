@@ -36,9 +36,11 @@ export default function CTA() {
             </Button>
             <div className='flex gap-2 mt-28'>
                 {social.map((card, index) => (
-                    <div className='h-12 w-12 flex justify-center bg-white rounded-full'>
+                    <div
+                        key={card.id}
+                        className='h-12 w-12 flex justify-center bg-white rounded-full'
+                    >
                         <Image
-                            key={card.id}
                             src={card.image}
                             alt=''
                             height={26}
