@@ -36,11 +36,11 @@ const cardData = [
 
 export default function Service() {
     return (
-        <div className=' h-screen px-28 selection: bg-gradient-to-b from-[#D4DDF8] to-white '>
+        <div className=' min-h-screen px-28 selection: bg-gradient-to-b from-[#D4DDF8] to-white '>
             <div className=' flex justify-center text-5xl font-semibold'>
                 <p>What We Do</p>
             </div>
-            <div className='grid grid-cols-3 gap-8 mt-24'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-24 justify-center'>
                 {cardData.map((card, index) => (
                     <Card
                         key={index}

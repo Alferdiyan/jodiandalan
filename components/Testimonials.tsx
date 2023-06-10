@@ -52,13 +52,15 @@ export default function Testimonials() {
     }
 
     return (
-        <div>
-            <h1>Testimonials</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8'>
+        <div className='border min-h-screen grid justify-center items-center'>
+            <h1 className='flex justify-center font-extrabold text-5xl'>
+                Testimonials
+            </h1>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-24 justify-center'>
                 {testimonialData.map((testimonial) => (
                     <div
                         key={testimonial.id}
-                        className='border p-10 w-[390px] rounded-lg'
+                        className='border p-10 w-[390px] rounded-3xl'
                     >
                         <div className='flex items-center justify-between mb-4'>
                             <div>
