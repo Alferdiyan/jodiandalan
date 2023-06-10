@@ -5,7 +5,7 @@ import { Button } from "./ui/button"
 
 export default function Hero() {
     return (
-        <div className=' h-screen px-24 bg-gradient-to-b from-white to-[#D4DDF8]'>
+        <div className=' min-h-screen py-11 px-24 bg-gradient-to-b from-white to-[#D4DDF8]'>
             <div className='flex justify-center'>
                 <p className='uppercase text-9xl font-bold text-white'>
                     designer.
@@ -14,6 +14,13 @@ export default function Hero() {
             <div className='flex justify-between'>
                 <div className='flex flex-col gap-4'>
                     <p className='text-xs uppercase'>andalan design</p>
+                    <div className='lg:hidden'>
+                        <Image
+                            src={jodi}
+                            alt=''
+                            width={298}
+                        />
+                    </div>
                     <p className='text-6xl font-extrabold'>
                         Logo and Brand
                         <br /> Designer
@@ -39,7 +46,7 @@ export default function Hero() {
                         LET &apos; S TALK
                     </Button>
                 </div>
-                <div>
+                <div className='hidden lg:block'>
                     <Image
                         src={jodi}
                         alt=''
