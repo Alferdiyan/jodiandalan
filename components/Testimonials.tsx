@@ -35,7 +35,7 @@ const testimonialData = [
 ]
 
 export default function Testimonials() {
-    const renderRatingStars = (rating) => {
+    const renderRatingStars = (rating: number) => {
         const stars = []
         const fullStars = Math.floor(rating)
         const hasHalfStar = rating % 1 !== 0
