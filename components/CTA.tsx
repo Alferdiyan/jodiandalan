@@ -23,7 +23,7 @@ const social = [
 
 export default function CTA() {
     return (
-        <div className='py-16 bg-gradient-to-b from-white to-[#D4DDF8] flex flex-col items-center justify-center '>
+        <div className='border border-red-800 py-16 bg-gradient-to-b from-white to-[#D4DDF8] flex flex-col items-center justify-center '>
             <p className='text-5xl mb-10'>
                 Tertarik untuk kerja sama dengan kami?
             </p>
