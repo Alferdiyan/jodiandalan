@@ -20,8 +20,8 @@ export default function Home() {
                 <Clients />
                 <Projects />
                 <Testimonials />
-                <section className='min-h-screen'>
-                    <CTA />
+                <section>
+                    <CTA  />
                 </section>
                 {/* <Contact /> */}
             </div>
