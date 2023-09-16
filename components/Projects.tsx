@@ -55,6 +55,7 @@ export default function Projects() {
     )
 }
 
+
 {
     /* {clientData.map((card, index) => (
                     <div className='flex justify-center'>
