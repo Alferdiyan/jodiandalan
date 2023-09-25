@@ -11,7 +11,6 @@ import CTA from "../../components/CTA"
 export default function Home() {
     return (
         <main>
-            {/* <Navbar /> */}
             <div className=' '>
                 <Hero />
             </div>
