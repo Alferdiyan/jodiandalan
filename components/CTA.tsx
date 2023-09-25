@@ -10,14 +10,17 @@ const social = [
     {
         id: 1,
         image: behance,
+        href: "https://www.behance.net/jodiandalan",
     },
     {
         id: 2,
         image: dribbbel,
+        href: "https://dribbble.com/jodihartanto",
     },
     {
         id: 3,
         image: instagram,
+        href: "https://www.instagram.com/andalandigital.id/",
     },
 ]
 
@@ -27,25 +30,28 @@ export default function CTA() {
             <p className='text-5xl mb-10'>
                 Tertarik untuk kerja sama dengan kami?
             </p>
-
-            <Button
-                variant='default'
-                className='rounded-full w-56 h-12'
-            >
-                LET &apos; S TALK
-            </Button>
+            <Link href='https://wa.me/message/WHEYTKS4DT6RJ1'>
+                <Button
+                    variant='default'
+                    className='rounded-full w-56 h-12'
+                >
+                    LET &apos; S TALK
+                </Button>
+            </Link>
             <div className='flex gap-2 mt-28'>
                 {social.map((card, index) => (
-                    <div
-                        key={card.id}
-                        className='h-12 w-12 flex justify-center bg-white rounded-full'
-                    >
-                        <Image
-                            src={card.image}
-                            alt=''
-                            height={26}
-                            width={26}
-                        />
+                    <div key={card.id}>
+                        <Link
+                            href={card.href}
+                            className='h-12 w-12 flex justify-center bg-white rounded-full'
+                        >
+                            <Image
+                                src={card.image}
+                                alt=''
+                                height={26}
+                                width={26}
+                            />
+                        </Link>
                     </div>
                 ))}
             </div>

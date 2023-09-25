@@ -6,6 +6,8 @@ import { useState } from "react"
 import { Button } from "./ui/button"
 import { CgMenuRight } from "react-icons/cg"
 import { IoMdClose } from "react-icons/io"
+import jodi from "../public/images/jodiphoto.png"
+import Link from "next/link"
 
 export default function Navbar() {
     const [menuItems] = useState([
@@ -47,32 +49,46 @@ export default function Navbar() {
                         ))}
                     </ul>
                 </div>
-                <Button
-                    variant='default'
-                    className='rounded-full w-56 h-12'
-                >
-                    LET &apos; S TALK
-                </Button>
+                <Link href='https://wa.me/message/WHEYTKS4DT6RJ1'>
+                    <Button
+                        variant='default'
+                        className='rounded-full w-56 h-12'
+                    >
+                        LET &apos; S TALK
+                    </Button>
+                </Link>
             </div>
 
             {/* tombol botton Nav */}
 
-            <div className='md:hidden'>
-                <div
-                    className='cursor-pointer fixed top-3 right-3 z-50 bg-blue-600'
-                    onClick={() => setOpen(!open)}
-                >
-                    {!open ? (
-                        <CgMenuRight
-                            size={24}
-                            color='#fff'
+            <div className='md:hidden border'>
+                <div>
+                    <a
+                        href='/'
+                        className='fixed top-3 left-5 gap-2 font-semibold hover:text-secondary text-3xl'
+                    >
+                        <Image
+                            src={andalan}
+                            alt=''
+                            width={35}
                         />
-                    ) : (
-                        <IoMdClose
-                            size={24}
-                            color='#fff'
-                        />
-                    )}
+                    </a>
+                    <div
+                        className='cursor-pointer fixed top-3 right-3 z-50'
+                        onClick={() => setOpen(!open)}
+                    >
+                        {!open ? (
+                            <CgMenuRight
+                                size={24}
+                                color='#0000FF'
+                            />
+                        ) : (
+                            <IoMdClose
+                                size={24}
+                                color='#fff'
+                            />
+                        )}
+                    </div>
                 </div>
 
                 <div
@@ -97,11 +113,18 @@ export default function Navbar() {
                     {menuItems.map((item) => (
                         <li
                             key={item.id}
-                            className='hover:bg-secondary'
+                            className='hover:text-primary text-white'
                         >
                             <a href={item.link}>{item.name}</a>
                         </li>
                     ))}
+                    {/* <div className='fixed bottom-0 right-0 '>
+                        <Image
+                            src={jodi}
+                            alt=''
+                            width={200}
+                        />
+                    </div> */}
                 </ul>
             </div>
         </div>

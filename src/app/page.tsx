@@ -16,9 +16,9 @@ export default function Home() {
             </div>
             <div>
                 <Service />
-                <Clients />
+                {/* <Clients /> */}
                 <Projects />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <section>
                     <CTA />
                 </section>

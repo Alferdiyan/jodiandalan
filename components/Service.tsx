@@ -37,14 +37,14 @@ const cardData = [
 export default function Service() {
     return (
         <div className=' min-h-screen px-28 selection: bg-gradient-to-b from-[#D4DDF8] to-white '>
-            <div className=' flex justify-center text-5xl font-semibold'>
+            <div className=' flex justify-center text-5xl font-semibold pt-14'>
                 <p>What We Do</p>
             </div>
-            <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-24 justify-center'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-5 mt-24 justify-center'>
                 {cardData.map((card, index) => (
                     <Card
                         key={index}
-                        className='border-4 flex flex-col items-center justify-center border-[#D4DDF8] rounded-3xl p-10 w-[336px] h-[336px] '
+                        className='border-4 flex flex-col items-center justify-center border-[#D4DDF8] rounded-3xl p-10 w-[336px] h-[336px]  '
                     >
                         <Image
                             src={card.image}
