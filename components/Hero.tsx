@@ -5,54 +5,27 @@ import { Button } from "./ui/button"
 
 export default function Hero() {
     return (
-        <div className=' min-h-screen py-11 px-24 bg-gradient-to-b from-white to-[#D4DDF8]'>
-            <div className='flex justify-center'>
-                <p className='uppercase text-9xl font-bold text-white'>
-                    designer.
-                </p>
-            </div>
-            <div className='flex justify-between'>
-                <div className='flex flex-col gap-4'>
-                    <p className='text-xs uppercase'>andalan design</p>
-                    <div className='lg:hidden'>
+        <div className=' min-h-screen  px-24  bg-gradient-to-b from-yellow-100 to-blue-500'>
+            <div className='flex flex-col justify-center items-center gap-5'>
+                {/* <div className='lg:hidden'>
                         <Image
                             src={jodi}
                             alt=''
                             width={298}
                         />
-                    </div>
-                    <p className='text-6xl font-extrabold'>
-                        Logo and Brand
-                        <br /> Designer
-                    </p>
-                    <p className='text-xs font-medium text-slate-500'>
-                        Over the past 9 years, as an art director and designer,
-                        I&apos;ve worked <br />
-                        with big companies and up-and-coming startups to
-                        successfully <br /> help them reach their full potential
-                        and attract new customers.
-                    </p>
-                    <div className='flex gap-4 '>
-                        <p className=''>View Project</p>
-                        <p className='text-xs font-medium text-slate-500 flex items-center'>
-                            or
-                        </p>
-                        <p>Read About Me</p>
-                    </div>
-                    <Button
-                        variant='default'
-                        className='rounded-full w-1/2'
-                    >
-                        LET &apos; S TALK
-                    </Button>
-                </div>
-                <div className='hidden lg:block'>
-                    <Image
-                        src={jodi}
-                        alt=''
-                        width={298}
-                    />
-                </div>
+                    </div> */}
+                <p className='text-6xl font-extrabold'>Your best Partner</p>
+                <p className='text-sm font-medium text-slate-500  '>
+                    Anda fokus bekerja mengurus pelanggan, sementara Andalan
+                    Digital akan fokus bekerja membangun brand bisnis Anda.
+                </p>
+
+                <Button
+                    variant='default'
+                    className='rounded-full w-1/'
+                >
+                    LET &apos; S TALK
+                </Button>
             </div>
         </div>
     )
